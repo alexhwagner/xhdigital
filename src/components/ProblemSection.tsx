@@ -4,21 +4,21 @@ import { AlertTriangle, TrendingDown, UserX } from "lucide-react";
 const problems = [
   {
     icon: AlertTriangle,
-    title: "Tem site, mas não gera resultados",
+    title: "Site bonito não gera vendas",
     description:
-      "Seu site é bonito, mas não converte. Visitantes entram e saem sem tomar nenhuma ação.",
+      "Ter um site visualmente agradável não basta. Sem estratégia, ele é apenas uma vitrine que ninguém para pra olhar.",
   },
   {
     icon: TrendingDown,
-    title: "Investe em tráfego e não converte",
+    title: "Tráfego sem conversão é dinheiro jogado fora",
     description:
-      "Você gasta em anúncios, mas o retorno não aparece. O problema não é o tráfego — é a página.",
+      "Cada clique no seu anúncio custa dinheiro. Se a página não converte, você está pagando para perder clientes.",
   },
   {
     icon: UserX,
-    title: "Perde clientes por falta de estratégia",
+    title: "Falta estratégia por trás da maioria das páginas",
     description:
-      "Sem uma estrutura pensada para converter, cada visitante que sai é dinheiro perdido.",
+      "A maioria das páginas na internet são genéricas. Sem estrutura pensada, não existe resultado previsível.",
   },
 ];
 
