@@ -12,8 +12,10 @@ const differentials = [
 
 const DifferentialsSection = () => {
   return (
-    <section className="py-24 bg-section-alt">
-      <div className="container mx-auto px-6">
+    <section className="py-28 bg-section-alt relative overflow-hidden">
+      <div className="floating-orb w-[350px] h-[350px] bg-primary/4 top-[5%] right-[5%]" />
+
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -21,9 +23,15 @@ const DifferentialsSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-primary font-semibold uppercase tracking-widest text-sm mb-4">
+          <motion.p
+            initial={{ opacity: 0, letterSpacing: "0.1em" }}
+            whileInView={{ opacity: 1, letterSpacing: "0.3em" }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-primary font-semibold uppercase text-sm mb-4"
+          >
             Diferenciais
-          </p>
+          </motion.p>
           <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">
             Por que escolher a{" "}
             <span className="text-gradient-gold">XH Digital?</span>
@@ -35,16 +43,21 @@ const DifferentialsSection = () => {
           {differentials.map((item, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 30, scale: 0.95 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-card border border-border rounded-xl p-7 text-center hover:border-primary/30 hover:shadow-gold transition-all duration-300 group"
+              whileHover={{ y: -10, transition: { duration: 0.3 } }}
+              className="bg-card rounded-xl p-8 text-center card-glow gradient-border group cursor-default"
             >
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-5 group-hover:bg-primary/20 transition-colors">
-                <item.icon className="w-7 h-7 text-primary" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+              <motion.div
+                className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6"
+                whileHover={{ scale: 1.15, rotate: [0, -5, 5, 0] }}
+                transition={{ duration: 0.4 }}
+              >
+                <item.icon className="w-8 h-8 text-primary" />
+              </motion.div>
+              <h3 className="text-lg font-bold mb-3">{item.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 {item.desc}
               </p>
