@@ -20,7 +20,7 @@ const FinalCTA = () => {
           <h2 className="text-3xl md:text-5xl font-display font-bold mb-6 leading-tight">
             Se você quer uma Landing Page que{" "}
             <span className="text-gradient-gold">realmente vende,</span> a XH Digital
-            é para você.
+            é a escolha certa.
           </h2>
           <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
             Pare de perder clientes com páginas que não convertem. Solicite agora
@@ -32,7 +32,7 @@ const FinalCTA = () => {
             rel="noopener noreferrer"
             className="inline-block bg-gold-gradient text-primary-foreground font-bold text-lg px-12 py-5 rounded-lg shadow-gold animate-pulse-gold hover:scale-105 transition-transform duration-300"
           >
-            Solicitar minha Landing Page premium
+            Solicitar Landing Page premium
           </a>
         </motion.div>
       </div>
