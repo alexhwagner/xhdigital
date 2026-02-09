@@ -12,33 +12,37 @@
     --card-foreground: 210 15% 90%;
     --popover: 220 12% 11%;
     --popover-foreground: 210 15% 90%;
-    --primary: 42 55% 52%;
+    --primary: 39 76% 54%;
     --primary-foreground: 220 15% 8%;
     --secondary: 215 10% 16%;
     --secondary-foreground: 210 10% 80%;
     --muted: 215 10% 14%;
     --muted-foreground: 215 8% 50%;
-    --accent: 42 55% 52%;
+    --accent: 39 76% 54%;
     --accent-foreground: 220 15% 8%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
     --border: 215 10% 18%;
     --input: 215 10% 18%;
-    --ring: 42 55% 52%;
+    --ring: 39 76% 54%;
     --radius: 0.5rem;
-    --gold-glow: 42 60% 50%;
-    --gold-soft: 42 40% 70%;
+    --gold-glow: 39 85% 60%;
+    --gold-soft: 39 70% 68%;
+    --gold-dark: 39 75% 45%;
     --dark-deeper: 220 18% 5%;
-    --silver: 210 8% 62%;
-    --silver-light: 210 10% 78%;
+    --silver: 210 12% 75%;
+    --silver-light: 210 15% 88%;
+    --copper: 20 70% 55%;
+    --bronze: 28 50% 45%;
+    --platinum: 210 8% 82%;
     --sidebar-background: 220 12% 11%;
     --sidebar-foreground: 210 15% 90%;
-    --sidebar-primary: 42 55% 52%;
+    --sidebar-primary: 39 76% 54%;
     --sidebar-primary-foreground: 220 15% 8%;
     --sidebar-accent: 215 10% 16%;
     --sidebar-accent-foreground: 210 10% 80%;
     --sidebar-border: 215 10% 18%;
-    --sidebar-ring: 42 55% 52%;
+    --sidebar-ring: 39 76% 54%;
   }
 }
 
