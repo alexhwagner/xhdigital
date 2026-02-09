@@ -12,7 +12,7 @@ const Footer = () => {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <img src={logo} alt="XH Digital" className="w-16 mx-auto mb-4 opacity-50" />
+          <img src={logo} alt="XH Digital" className="w-40 mx-auto mb-4 opacity-80" />
           <div className="glow-line w-32 mx-auto mb-4" />
           <p className="text-muted-foreground text-sm">
             © {new Date().getFullYear()} XH Digital. Todos os direitos reservados.

@@ -20,9 +20,9 @@ const FinalCTA = () => {
           <motion.img
             src={logo}
             alt="XH Digital"
-            className="w-20 mx-auto mb-8 opacity-60"
+            className="w-40 mx-auto mb-8 opacity-80"
             initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 0.6, scale: 1 }}
+            whileInView={{ opacity: 0.8, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           />
@@ -47,7 +47,7 @@ const FinalCTA = () => {
           </p>
 
           <motion.a
-            href="https://wa.me/5500000000000"
+            href="https://wa.me/5547997889669?text=Ol%C3%A1%2C%20tive%20interesse%20e%20quero%20saber%20mais"
             target="_blank"
             rel="noopener noreferrer"
             className="relative inline-block bg-gold-gradient text-primary-foreground font-bold text-lg px-14 py-5 rounded-xl shadow-gold-lg overflow-hidden group"
@@ -62,7 +62,7 @@ const FinalCTA = () => {
             }}
             transition={{ duration: 3, repeat: Infinity }}
           >
-            <span className="relative z-10">Solicitar Landing Page premium</span>
+            <span className="relative z-10"> CLIQUE AQUI </span>
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-transparent via-foreground/10 to-transparent"
               animate={{ x: ["-100%", "200%"] }}

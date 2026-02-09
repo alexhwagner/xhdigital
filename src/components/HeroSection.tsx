@@ -81,6 +81,9 @@ const HeroSection = () => {
           className="mb-12 relative"
         >
           <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-56 h-56 md:w-80 md:h-80 rounded-full bg-amber-500/20 blur-3xl animate-pulse" />
+          </div>
+          <div className="absolute inset-0 flex items-center justify-center">
             <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-primary/10 blur-3xl animate-pulse" />
           </div>
           <img
@@ -125,43 +128,53 @@ const HeroSection = () => {
           total em conversão.
         </motion.p>
 
-        {/* CTA with shimmer */}
+       {/* CTA with shimmer */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 1.6 }}
+        className="mb-24"
+      >
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.6 }}
+          onClick={() =>
+            window.open(
+              "https://wa.me/5547997889669?text=Ol%C3%A1%2C%20tive%20interesse%20e%20quero%20saber%20mais",
+              "_blank"
+            )
+          }
+          className="relative inline-block bg-gold-gradient text-primary-foreground font-bold text-lg px-12 py-5 rounded-xl shadow-gold-lg overflow-hidden group cursor-pointer"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.98 }}
         >
-          <motion.a
-            href="#contato"
-            className="relative inline-block bg-gold-gradient text-primary-foreground font-bold text-lg px-12 py-5 rounded-xl shadow-gold-lg overflow-hidden group"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            <span className="relative z-10">Quero vender mais</span>
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-transparent via-foreground/10 to-transparent"
-              animate={{ x: ["-100%", "200%"] }}
-              transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
-            />
-          </motion.a>
+          <span className="relative z-10">
+            Quero vender mais
+          </span>
+
+          <motion.div
+            className="absolute inset-0 bg-gradient-to-r from-transparent via-foreground/10 to-transparent"
+            animate={{ x: ["-100%", "200%"] }}
+            transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
+          />
         </motion.div>
+      </motion.div>
+
 
         {/* Scroll indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 2.5, duration: 1 }}
+          transition={{ delay: 2, duration: 0.8 }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2"
         >
           <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
           >
-            <div className="w-7 h-11 border-2 border-muted-foreground/30 rounded-full flex items-start justify-center p-1.5">
+            <div className="w-7 h-11 border-2 border-muted-foreground/40 rounded-full flex items-start justify-center p-2">
               <motion.div
-                animate={{ y: [0, 16, 0], opacity: [1, 0.3, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
-                className="w-1.5 h-1.5 rounded-full bg-primary"
+                animate={{ y: [0, 12, 0] }}
+                transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
+                className="w-1 h-2.5 rounded-full bg-gradient-to-b from-primary to-primary/30"
               />
             </div>
           </motion.div>
