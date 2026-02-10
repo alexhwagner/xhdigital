@@ -3,11 +3,14 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig({
-  base: "/xhdigital/",
+  base: "/xhdigital/", // já está certo
   plugins: [react()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+  build: {
+    outDir: "docs" // <- aqui você gera o build direto na pasta docs
   },
 });
