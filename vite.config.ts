@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig({
-  base: "/xhdigital/", // já está certo
+  base: "/", // já está certo
   plugins: [react()],
   resolve: {
     alias: {

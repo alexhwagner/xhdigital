@@ -16,7 +16,8 @@ const App = () => (
       <Toaster />
       <Sonner />
 
-      <BrowserRouter basename="/xhdigital">
+      {/* basename dinâmico baseado no vite.config.ts */}
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="*" element={<NotFound />} />
