@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import Barbearia from "./pages/Barbearia";
 import NotFound from "./pages/NotFound";
 import AnimatedBackground from "@/components/AnimatedBackground";
 
