@@ -21,6 +21,7 @@ const App = () => (
       <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/barbearia" element={<Barbearia />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
